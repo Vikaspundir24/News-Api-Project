@@ -43,15 +43,25 @@ body{
 }
 
 .left-nav ul{
+    margin-top: 10px;
     align-items: center;
-    margin-left: 15px;
     display: flex;
 }
 
 .left-nav ul li{
+    background-color: white;
+    opacity: 90%;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 5px 15px;
     margin-left: 15px;
 }
 
+.left-nav ul li:hover{
+    background-color:  hsl(146, 68%, 45%);
+    color: white;
+}
 .right-nav{
     display: flex;
     align-items: center;
@@ -59,15 +69,19 @@ body{
 
 .right-nav ul{
     align-items: center;
-    margin-left: 5px;
+    gap: 10px ;
     display: flex;
 }
 
 .right-nav i{
-    margin-top: 5px;
+    margin-bottom: 12px;
 }
 .right-nav ul li{
-    margin-left: 15px;
+    margin-left: 5px;
+}
+
+.right-nav ul li:hover{
+    color: hsl(146, 68%, 45%);
 }
 
 
@@ -76,7 +90,9 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    border: 2px solid white;
 }
+
 
 .containers{
     display: flex;
@@ -95,20 +111,64 @@ body{
 .container1 , .container21 , .container22  , .container3{
     padding: 20px ;
     background-color: white ;
-    display: flex;
-    flex-direction: column;
     gap: 20px  ;
     align-items: center;
     width: 25vw;
     border-radius: 20px ;
     color: black;
+    text-align: center;
 }
 
 /* .container21 , .container22{
     gap: 20px;
 } */
 
-#image1{
+#image1 , #image2{
     width: 20vw;
     height: 40%;
 }
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+h4{
+    font-weight: bold;
+}
+
+.active h4{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.active p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.active h6{
+    border: 3px solid hsl(146, 68%, 45%) ;
+    margin-top: 10px;
+    font-weight: 900 ;
+    font-size: 12px;
+    padding: 5px ;
+    letter-spacing: 1px;
+}
+
+.active a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.carousel-control-next {
+    right: -22px;
+} 
+
+.carousel-control-prev {
+    left: -22px;
+}
+
+.carousel-inner{
+    padding: 10px 20px;
+}
+
