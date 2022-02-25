@@ -31,6 +31,7 @@ xhr1.onload = function () {
                     <img src="${element["urlToImage"]}" alt="" id="image1">
                     <h4>${element["title"]}</h4>
                     <p>${element["description"]}</p>
+                    <p>DATE ${element["publishedAt"]}</p>
                     <a href="${element["url"]}">READ MORE</a>
                     
                     <h6>BUSINESS</h6>
@@ -268,6 +269,7 @@ xhr4.onload = function () {
                     <img src="${element["urlToImage"]}" alt="" id="image1">
                     <h4>${element["title"]}</h4>
                     <p>${element["description"]}</p>
+                    <p>DATE ${element["publishedAt"]}</p>
                     <a href="${element["url"]}">READ MORE</a>
                     
                     <h6>HEALTH</h6>
