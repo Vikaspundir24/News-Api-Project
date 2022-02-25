@@ -27,6 +27,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
 }
 .left-nav{
     display: flex;
@@ -276,4 +277,69 @@ span{
     font-size: 30px;
     color: hsl(146, 68%, 55%);
     font-weight: bold;
+}
+.hidden{
+    
+    display: none;
+}
+
+/* ==========MEDIA QUERIES========== */
+
+@media only screen and (max-width: 1300px) {
+    .hidden{
+        display: flex;
+    }
+    .right-nav{
+        display: none;
+    }
+
+    .left-nav ul{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 960px){
+    .wrapper3{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .containers{
+        flex-direction: column;
+    }
+
+    .container1 , .container2 , .container21  ,.container22,  .container3{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .left-footer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-footer ul{
+        padding: 0px ;
+    }
+}
+
+@media only screen and (max-width: 960px){
+
+    .wrapper3{
+        flex-direction: column;
+    }
+    .left-footer{
+        flex-direction: column;
+    }
+    .left-footer ul
+    {
+        text-align: center;
+        gap: 8px;
+        flex-direction: column;
+    }
 }
