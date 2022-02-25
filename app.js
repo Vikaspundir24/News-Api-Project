@@ -4,8 +4,8 @@
 
 // Grab the news container
 let slides1 = document.getElementById("slides1");
-let next = document.querySelector(".carousel-control-next");
-let back = document.querySelector(".carousel-control-prev")
+let next = document.querySelector(".AZ");
+let back = document.querySelector(".ZA")
 
 // Create an ajax get request
 const xhr1 = new XMLHttpRequest();
@@ -111,7 +111,7 @@ xhr2.onload = function () {
 
                 <div class="carousel-item " id="slideA${index}">
                     <h4>${element["title"]}</h4>
-                    <p>${element["description"]}</p>
+                   
                     <a href="${element["url"]}">READ MORE</a>
                     
                     <h6>SPORTS</h6>
@@ -190,7 +190,7 @@ xhr3.onload = function () {
 
                 <div class="carousel-item " id="slideB${index}">
                     <h4>${element["title"]}</h4>
-                    <p>${element["description"]}</p>
+                    
                     <a href="${element["url"]}">READ MORE</a>
                     
                     <h6>ENTERTAINMENT</h6>
@@ -246,8 +246,10 @@ let nextAD = document.querySelector(".AD");
 let backDA = document.querySelector(".DA")
 
 // Create an ajax get request
+
 const xhr4 = new XMLHttpRequest();
-xhr4.open('GET', `https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=1f3aa04f979248f8aedc6a19610dfac8`, true);
+xhr4.open('GET', `https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=1f3aa04f979248f8aedc6a19610dfac8
+`, true);
 
 // What to do when response is ready
 xhr4.onload = function () {
@@ -256,7 +258,6 @@ xhr4.onload = function () {
         let articles = json.articles;
         console.log(articles);
         let newsHtml = "";
-
 
 
         articles.forEach(function (element, index) {
@@ -272,11 +273,10 @@ xhr4.onload = function () {
                     <p>DATE ${element["publishedAt"]}</p>
                     <a href="${element["url"]}">READ MORE</a>
                     
-                    <h6>HEALTH</h6>
+                    <h6>TECH</h6>
                 </div>
                `;
             newsHtml += news;
-
 
 
 
@@ -314,3 +314,78 @@ xhr4.onload = function () {
 xhr4.send()
 
 
+
+/* ========================================================= */
+
+/*===================== BIG SCREEN============ */
+
+/* let apiKey = 1f3aa04f979248f8aedc6a19610dfac8; */
+
+// Grab the news container
+let Bigslides = document.getElementById("Bigslides");
+
+let BigA = document.querySelector(".BigA");
+let BigZ = document.querySelector(".BigZ")
+
+// Create an ajax get request
+const xhr5 = new XMLHttpRequest();
+xhr5.open('GET', `https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=1f3aa04f979248f8aedc6a19610dfac8`, true);
+
+// What to do when response is ready
+xhr5.onload = function () {
+    if (this.status === 200) {
+        let json = JSON.parse(this.responseText);
+        let articles = json.articles;
+        console.log(articles);
+        let newsHtml = "";
+
+
+
+        articles.forEach(function (element, index) {
+            // console.log(element, index)
+
+            let news = `                <div class="carousel-item Topper " id="slidebig${index}">
+            <h6>HEALTH | <span>DATE: ${element["publishedAt"]}</span></h6>
+            <h2>${element["title"]}</h2>
+            <p>${element["description"]}</p>
+            <a href="${element["url"]}">READ MORE</a>
+            <h6>INDIA</h6>
+        </div>`
+            newsHtml += news;
+
+
+
+
+
+
+        });
+        Bigslides.innerHTML = newsHtml;
+
+    } else {
+        console.log("Some error occured")
+    }
+
+    let k = 0;
+    const slideLK = document.getElementById(`slidebig${k}`);
+    slideLK.classList.add("active");
+
+    BigA.addEventListener("click", () => {
+        document.getElementById(`slidebig${k+1}`).classList.add("active");
+        document.getElementById(`slidebig${k}`).classList.remove("active");
+        k = k + 1;
+        return k;
+    })
+
+    BigZ.addEventListener("click", () => {
+        document.getElementById(`slidebig${k-1}`).classList.add("active");
+        document.getElementById(`slidebig${k}`).classList.remove("active");
+        k = k - 1;
+        return k;
+    })
+
+
+
+}
+
+
+xhr5.send()

@@ -118,12 +118,18 @@ body{
   border-radius: 20px ;
     color: black;
     text-align: center;
-    box-shadow: 0 4px 8px -2px lightblue;  
+    box-shadow: 0 4px 8px -2px lightblue; 
+    width: 24vw;
 }
 
-/* .container21 , .container22{
-    gap: 20px;
-} */
+
+.container21 , .container22{
+    height: 45vh;
+}
+
+.container1 , .container2 , .container3{
+    height: 90vh; 
+}
 
 #image1 , #image2{
     width: 20vw;
@@ -133,6 +139,14 @@ body{
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
+}
+.BigA{
+    filter: invert(0%);
+    right: -65px;
+}
+.BigZ{
+    filter: invert(0%);
+    left: -65px;
 }
 
 h4{
@@ -162,15 +176,56 @@ h4{
     text-decoration: none;
 }
 
-.carousel-control-next {
-    right: -22px;
-} 
-
-.carousel-control-prev {
+.AZ , .BA , .CA , .DA {
     left: -22px;
+}
+.ZA , .AB ,.AC ,.AD {
+    right: -22px;
 }
 
 .carousel-inner{
     padding: 10px 20px;
 }
 
+
+.bigscreen{
+    background-image: url( "abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg");
+    padding:70px 65px;
+    border-bottom: 1px solid white  ;
+    background-size: cover;
+    width: auto ;
+}
+
+.Topper{
+    text-align: center;
+    margin: auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}   
+
+.Topper h2{
+    font-weight: 900  ;
+    font-size: 44px ;
+}
+
+.Topper a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.Topper h6{
+    border: none;
+}
+
+/* <p>${element["description"]}</p> */
+
+/* <div class="carousel-item " id="slidebig${index}>
+               <h6>HEALTH | <span>DATE: ${element["publishedAt"]}</span></h6>
+               <h2>${element["title"]}</h2>
+               <p>${element["description"]}</p>
+               <a href="${element["url"]}">READ MORE</a>
+               <h6>INDIA</h6>
+             </div> */
