@@ -113,7 +113,8 @@ body{
 .container2{
     display: flex;
     flex-direction: column;
-    gap: 20px ;
+    
+    justify-content: space-between;
 
 }
 
@@ -131,11 +132,11 @@ body{
 
 
 .container21 , .container22{
-    height: 45vh;
+    /* height: 45vh; */
 }
 
 .container1 , .container2 , .container3{
-    height: 90vh; 
+   /*  height: 90vh;  */
 }
 
 #image1 , #image2{
@@ -222,9 +223,18 @@ h4{
     font-weight: bold;
     color: black;
 }
+.Topper a:hover{
+    color: blue;
+}
 
 .Topper h6{
     border: none;
+}
+
+.Topper h6 span{
+        font-size: 13px;
+ color: hsl(0, 0%, 100%);
+    font-weight: 400;
 }
 
 /* <p>${element["description"]}</p> */
