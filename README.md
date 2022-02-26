@@ -10,8 +10,7 @@
 **You can checkout this demo below**⬇️
 
 ## Demo
-
-https://github.com/Vikaspundir24/News-Api-Project/blob/main/bandicam%202022-02-26%2016-36-59-829.mp4
+NewsNation.mp4
 
 
 ## Features
