@@ -10,7 +10,8 @@
 **You can checkout this demo below**⬇️
 
 ## Demo
-<video src='NewsNation.3gp' width=180/>
+
+
 ## Features
 
 - Top headlines will be displayed on the home page
