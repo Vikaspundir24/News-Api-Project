@@ -10,8 +10,8 @@
 **You can checkout this demo below**⬇️
 
 ## Demo
-<video src='NewsNation.mp4' width=180/>
 
+NewsNation.mp4
 
 ## Features
 
