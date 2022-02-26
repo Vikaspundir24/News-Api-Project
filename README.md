@@ -10,8 +10,7 @@
 **You can checkout this demo below**⬇️
 
 ## Demo
-
-https://github.com/Vikaspundir24/News-Api-Project/blob/bb58aa5f9afbe2873ba3a529e41234e5ad0e8062/NewsNation.mp4
+<video src='NewsNation.mp4' width=180/>
 
 
 ## Features
