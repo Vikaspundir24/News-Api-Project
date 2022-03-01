@@ -10,7 +10,11 @@
 **You can checkout this demo below**⬇️
 
 ## Demo
-NewsNation.mp4
+
+
+https://user-images.githubusercontent.com/87934860/156087522-f660204f-59d5-4634-809a-fffc3a579cd7.mp4
+
+
 
 
 ## Features
