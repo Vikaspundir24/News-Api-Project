@@ -1,7 +1,7 @@
 # News-Api-Project
 
 # News Nation
-*News Nation* Web App which is a completely responsive news website landing page from scratch using HTML, CSS, Bootstrap, and Vanilla Javascript which is based on newsapi.org 
+*News Nation* Web App which is a completely responsive News website landing page from scratch using HTML, CSS, Bootstrap, and Vanilla Javascript which is based on newsapi.org 
 
 
 ## Live Link Issue
